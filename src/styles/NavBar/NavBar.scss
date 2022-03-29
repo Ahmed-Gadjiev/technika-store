@@ -1,0 +1,37 @@
+.NavBar {
+    background-color: #0e1821;
+    height: 60px;
+
+    .navWrapper {
+        max-width: 1300px;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .catalog {
+            width: 310px;
+            height: 100%;
+            background-color: #243c53;
+            color: white;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        .linksPages {
+            display: flex;
+
+            div {
+                color: white;
+                margin-left: 40px;
+            }
+        }
+    }
+}

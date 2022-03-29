@@ -1,0 +1,19 @@
+@import './Header/Header.scss';
+@import './Fonts.scss';
+@import './NavBar/NavBar.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2';
+}
+
+
+a {
+    text-decoration: none;
+    color: #838688;
+}
