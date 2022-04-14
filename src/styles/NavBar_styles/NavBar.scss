@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
 
-        .catalog {
+        .catalogLink {
             width: 310px;
             height: 100%;
             background-color: #243c53;
@@ -28,7 +28,7 @@
         .linksPages {
             display: flex;
 
-            div {
+            .link {
                 color: white;
                 margin-left: 40px;
             }

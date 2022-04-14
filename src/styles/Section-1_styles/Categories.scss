@@ -1,0 +1,28 @@
+.Categories{
+    background-color: #EDF2F6;
+    width: 310px;
+    height: 544px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    .Category-link{
+        display: flex;
+
+        img{
+            margin: 8px 10px 8px 18px;
+        }
+
+        p{
+            color: #070C11;
+            margin-top: 13.5px;
+            margin-bottom: 13.5px;
+        }
+        transition: 0.1s;
+    }
+
+    .Category :hover{
+        background: #DAE4ED;
+    }
+}

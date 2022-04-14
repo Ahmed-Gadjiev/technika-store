@@ -1,0 +1,5 @@
+export {default as Slide1} from './slider1.png'
+export {default as Slide2} from './slider2.png' 
+export {default as Slide3} from './slider3.png'
+export {default as Slide4} from './slider4.png'
+export {default as Slide5} from './slider5.png'

@@ -1,6 +1,9 @@
-@import './Header/Header.scss';
 @import './Fonts.scss';
-@import './NavBar/NavBar.scss';
+
+@import './Header_styles/Header.scss';
+@import './NavBar_styles/NavBar.scss';
+@import './Section-1_styles/Categories.scss';
+@import './Section-1_styles/Slider.scss';
 
 * {
     margin: 0;
@@ -10,6 +13,15 @@
 
 body {
     font-family: 'Exo 2';
+}
+
+.page-wrapper{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.section-1{
+    display: flex;
 }
 
 

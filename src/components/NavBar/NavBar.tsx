@@ -1,23 +1,34 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { catalogIcon } from '../../assets'
 
-interface NavBarProps {
-    pages: string[]
+interface Link {
+    name: string
+    path: string
 }
 
-const NavBar: React.FC<NavBarProps> = ({ pages }) => {
+interface NavLinksProps {
+    links: Link[]
+}
+
+const NavBar: React.FC<NavLinksProps> = ({ links }) => {
     return (
         <div className="NavBar">
             <div className="navWrapper">
-                <div className="catalog">
+                <Link to="/catalog" className="catalogLink">
                     <img src={catalogIcon} alt="ctlgIcon" />{' '}
                     <p>Каталог товаров</p>
-                </div>
+                </Link>
                 <div className="linksPages">
-                    {pages &&
-                        pages.map((name) => (
-                            <div key={Math.random()}>{name}</div>
-                        ))}
+                    {links.map((link) => (
+                        <Link
+                            to={link.path}
+                            className="link"
+                            key={Math.random()}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
                 </div>
             </div>
         </div>

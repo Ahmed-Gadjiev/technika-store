@@ -3,15 +3,16 @@ import { Logo, SearchIcon } from '../../assets'
 import HeaderLinks from './HeaderLinks'
 import PhoneNumbers from './PhoneNumbers';
 import WorkSchedule from './WorkSchedule';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header: React.FunctionComponent = () => {
     return (
         <div className="header">
           <div className="headerWrapper">
             <div className="logo">
-                <a href="/">
+                <Link to="/">
                     <img src={Logo} alt="logo" />
-                </a>
+                </Link>
             </div>
             <PhoneNumbers />
             <WorkSchedule />

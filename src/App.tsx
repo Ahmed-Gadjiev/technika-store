@@ -1,6 +1,5 @@
-import React from 'react'
-import Header from './components/Header/Header'
-import NavBar from './components/NavBar/NavBar'
+import { Header, NavBar } from './components'
+import Routing from './Routing'
 
 import './styles/App.scss'
 
@@ -9,15 +8,19 @@ function App() {
         <div>
             <Header />
             <NavBar
-                pages={[
-                    'О компании',
-                    'Акции',
-                    'Рассрочка 0|0|18',
-                    'Сервис и гарантия',
-                    'Опт/дропшиппинг',
-                    'Контакты',
+                links={[
+                    { name: 'О компании', path: '#' },
+                    { name: 'Акции', path: '#' },
+                    { name: 'Рассрочка 0|0|18', path: '#' },
+                    { name: 'Сервис и гарантия', path: '#' },
+                    { name: 'Опт/дропшиппинг', path: '#' },
+                    { name: 'Контакты', path: '#' },
                 ]}
             />
+
+            <div className="page-wrapper">
+                <Routing />
+            </div>
         </div>
     )
 }
